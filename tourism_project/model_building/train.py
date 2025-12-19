@@ -38,17 +38,18 @@ api = HfApi()
 # ===============================
 # Load Train / Test Data from HF
 # ===============================
+
 X_train = pd.read_csv(
-    f"hf://datasets/{HF_DATASET_REPO}/X_train.csv"
+    f"hf://datasets/{HF_DATASET_REPO}/processed/X_train.csv"
 )
 X_test = pd.read_csv(
-    f"hf://datasets/{HF_DATASET_REPO}/X_test.csv"
+    f"hf://datasets/{HF_DATASET_REPO}/processed/X_test.csv"
 )
 y_train = pd.read_csv(
-    f"hf://datasets/{HF_DATASET_REPO}/y_train.csv"
+    f"hf://datasets/{HF_DATASET_REPO}/processed/y_train.csv"
 ).squeeze()
 y_test = pd.read_csv(
-    f"hf://datasets/{HF_DATASET_REPO}/y_test.csv"
+    f"hf://datasets/{HF_DATASET_REPO}/processed/y_test.csv"
 ).squeeze()
 
 print("Dataset loaded successfully.")
