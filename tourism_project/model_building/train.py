@@ -24,7 +24,7 @@ from huggingface_hub.utils import RepositoryNotFoundError
 # ===============================
 # MLflow Configuration
 # ===============================
-mlflow.set_tracking_uri("http://localhost:5000")
+mlflow.set_tracking_uri("file:./mlruns")
 mlflow.set_experiment("tourism-model-training")
 
 # ===============================
